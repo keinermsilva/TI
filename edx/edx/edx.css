@@ -1,0 +1,163 @@
+/* edX.css */
+/* Importar uma fonte: 1º Ir ao google fonts 2º Carregar no "+" da fonte que queremos 3º Abrir a seleção 4º Selecionar import 5º Copiar e colar*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+header {
+        
+        margin-left: auto;
+        margin-right: auto;
+      
+        
+}
+
+header.one {
+        border-bottom: solid;
+}
+
+header.two {
+        border-bottom: solid;
+        padding-top: 20px;
+}
+
+div.container img {
+    float: left;
+    }
+    
+div.container nav.one {
+    float: left;
+    }
+
+div.container nav.two {
+    float: right;
+    }
+
+.container {
+                margin-left:auto;
+                margin-right: auto;
+                width:1200px;
+}
+
+div.container {
+                overflow: hidden;
+                
+                
+}
+
+nav.one li {
+    float: left;
+    list-style-type: none;
+    padding-left: 20px;
+    font-weight: bolder;
+    
+}
+
+div.three {
+            float: left;
+            
+}
+
+div.four {
+        float:left;
+}
+
+div.four h1 {
+        margin-top: 0px;
+        margin-left: 20px;
+}
+
+div.four p {
+        width: 299px;
+        margin-left: 20px;
+        margin-bottom: 0px;
+}
+
+div.four a {
+        margin-left: 10px;
+}
+
+div.five {
+        float:right;
+}
+
+main header {
+        overflow: hidden;
+}
+
+div.five p span {
+        width: 160px;
+}
+
+span.one {
+        display: block;
+        text-align: center;
+        margin-left: 15px;
+}
+
+span.two {
+        
+        text-align: center;
+}
+
+div.five a {
+        width: 20px;
+        text-decoration: none;
+        color: black;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      
+}
+
+section.one {
+        margin: 10px;
+        
+        
+}
+
+section.one h2 {
+    
+}
+
+section.one img {
+        float: right;
+        margin-top: 15px;
+}
+
+section.one p {
+        float: left;
+        width: 524px;
+        margin-left: 25px;
+}
+
+main article section {
+       
+        overflow: hidden;
+        
+        
+        
+}
+
+main.container article {
+        border: solid;
+        margin-right: 387px;
+        margin-top: 30px;
+        margin-left: 20px;
+}
+
+aside ul {
+        float: right;
+}
+
+/*
+div.container.nav {
+            float: left;
+}
+main 
+
