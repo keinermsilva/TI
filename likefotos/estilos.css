@@ -1,0 +1,111 @@
+﻿/* estilos.css */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body { 
+		font-family: "Open Sans",Arial,Helvetica,sans-serif;
+		margin: 0;
+}
+
+header {
+        background-color: rgba(0,0,0,0.85);
+        color:white;
+        overflow:hidden;   
+        padding: 0 2em;
+        
+       
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        z-index: 1000; 
+        }
+
+
+nav a { text-decoration: none; color:white; }
+
+h1 { float:left;}
+
+nav { float:right; margin-top:2em;}
+
+section {         
+                width: 90%;              
+                margin: 7em auto;
+                overflow:hidden;
+        }
+
+
+.foto img { max-width: 100%; 
+            vertical-align: bottom;
+          }        
+.foto { position:relative;}
+span.like { position:absolute; bottom:1px; left:2px; }
+button.like { position:absolute; bottom:1px; right:2px; }
+
+
+footer { 
+        background-color: rgba(0,0,0,0.85);
+        color:white;
+        padding: 0 2em;
+
+        border: 1px solid transparent; 
+       }
+/*Introduzir media querie*/
+ 
+ @media (min-width: 1201px)
+ {
+/*Fotos lado a lado 3 a 3*/
+.foto  {
+        float:left;
+           
+        width: 30%;                     
+        margin-right: 5%;
+        margin-bottom: 1em;
+        }
+        
+
+.foto:nth-child(3n) { margin-right: 0;}
+
+.foto:nth-child(3n+1) { clear:left;}
+
+} /*Fim da media querie*/
+
+ 
+ 
+/*Fotos lado a lado (início da segunda querie)*/
+@media (min-width:751px) and (max-width:1200px)
+{ 
+.foto  {
+        float:left;
+           
+        width: 47.5%;              /*ajustou-se a width para 47.5 % segundo os cálculos feitos*/        
+        margin-right: 5%;
+        margin-bottom: 1em;
+        }
+        
+
+.foto:nth-child(2n) { margin-right: 0;}   /*ajustou-se de 3n para 2n pois as imagens estão agora 2 a 2*/ 
+
+.foto:nth-child(2n+1) { clear:left;}
+
+} /*Fim da media querie*/
+
+/*Fotos lado a lado (início da 3ª querie)*/
+@media (max-width:750px)
+{ 
+.foto  {
+        
+        margin-bottom: 1em;
+        
+
+        }
+
+section {width: 95%;}
+        
+nav * {display: none; /*visibility: hidden; ----> esta é outra forma mas a diferença é que esta ocupa na mesma o espaço, escondendo apenas a imagem*/} 
+nav:before {
+                content: "\f0c9";
+                font-family: FontAwesome;
+                font-size: 30px;              /* aumentou-se a imagem do icone*/
+           }
+} /*Fim da media querie*/
